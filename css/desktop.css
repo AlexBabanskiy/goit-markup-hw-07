@@ -1,21 +1,300 @@
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.container {
 		width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
+		padding-left: 36px;
+		padding-right: 36px;
 	}
 
-	.customers-item {
-		width: 168px;
+	.header-block {
+		border-bottom: 1px solid #e7e9fc;
+		margin: auto;
+	}
+
+	.header-menu {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo-header {
+		margin-right: 76px;
+	}
+
+	.address {
+		list-style: none;
+		font-style: normal;
+		margin-left: auto;
+	}
+
+	.address-link {
+		color: var(--primary-title-color);
+		font-weight: 400;
+		text-decoration: none;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.adress-list {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.adress-list .item + .item {
+		margin-left: 40px;
+	}
+
+	.adress-list {
+		display: flex;
+	}
+
+	.address-link:hover,
+	.address-link:focus {
+		color: #404bbf;
+	}
+
+	.hero {
+		padding-top: 188px;
+		padding-bottom: 188px;
+		max-width: 1440px;
+		background-color: rgba(46, 47, 66, 0.7);
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+		background-size: cover;
+	}
+
+	.hero .hero-title {
+		padding-top: 0;
+		font-size: 56px;
+	}
+
+	.button-main {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #4d5ae5;
+		font-weight: 500;
+		font-size: 16px;
+		min-width: 169px;
+		height: 56px;
+		margin-top: 48px;
+		margin-bottom: 0;
+		line-height: 1.5;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		cursor: pointer;
+		padding: 0;
+
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.button-main:hover,
+	.button-main:focus {
+		background-color: #404bbf;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
+	/* .advantages {
+		margin-top: 120px;
+		margin-bottom: 120px;
+	} */
+
+	.advantages {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 120px;
+		padding-top: 120px;
+	}
+	.advantages .list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.advantages-title {
+		margin: 0;
+	}
+
+	.list .item-advantages {
+		margin: 0;
+		width: calc((100% - 72px) / 4);
+		gap: 24px;
+	}
+
+	.item-advantages .list-title {
+		color: #2e2f42;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	.item-advantages .list-svg {
+		display: flex;
+		justify-content: center;
+
+		padding-top: 24px;
+		padding-bottom: 24px;
+		background-image: url(../images/icon-background.svg);
+		background-size: cover;
+	}
+
+	.item-advantages .list-icon {
+		max-width: 64px;
+		max-height: 64px;
+	}
+
+	.list .list-text {
+		color: var(--primary-text-color);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+	}
+
+	.works {
+		padding-bottom: 120px;
+	}
+
+	.works ul {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.work-title {
+		color: var(--primary-title-color);
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-align: center;
+		margin-bottom: 72px;
+	}
+
+	.list .works-item {
+		padding: 0;
+	}
+
+	.customers-list {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer-content {
+		display: flex;
+		margin-left: 0;
+	}
+
+	.footer-social {
+		margin-left: 120px;
+	}
+
+	.footer-form-container {
+		margin-top: 0;
+		margin-left: 80px;
+	}
+
+	.footer-form {
+		margin-top: 16px;
+		display: flex;
+		column-gap: 24px;
+	}
+
+	.footer-form-title {
+		font-family: "Roboto";
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: #ffffff;
+	}
+
+	.footer-form-input {
+		padding-left: 16px;
+		width: 264px;
+		height: 40px;
+		border: 1px solid #ffffff;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+		background-color: #2e2f42;
+	}
+
+	.footer-form-input::placeholder {
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 2;
+		letter-spacing: 0.04em;
+		color: #ffffff;
+	}
+
+	.footer-form-input:focus {
+		color: #fcfcfc;
+		outline: none;
+	}
+
+	.footer-form-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ffffff;
+		background-color: #4d5ae5;
+		font-weight: 500;
+		font-size: 16px;
+		min-width: 165px;
+		margin: auto;
+		height: 40px;
+		line-height: 1.5;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		cursor: pointer;
+
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.footer-form-button::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		margin-left: 16px;
+		background-image: url(../images/icon-send.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.footer-form-button:hover,
+	.footer-form-button:focus {
+		background-color: #404bbf;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
+
+	.footer .container {
+		display: flex;
 	}
 }
-*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
 	.list-svg {
 		display: none;
 	}
 
 	.works {
 		display: none;
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/people-office1@2x.jpg);
 	}
 }
