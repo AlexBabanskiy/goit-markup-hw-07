@@ -548,10 +548,15 @@ img {
 	line-height: 1.2;
 	text-decoration: none;
 	margin-bottom: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 .logo-decor-foot {
 	color: #f4f4fd;
+
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 .footer {
