@@ -1,0 +1,21 @@
+/* @media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.customers-item {
+		width: 168px;
+	}
+}
+*/
+@media screen and (max-width: 1200px) {
+	.list-svg {
+		display: none;
+	}
+
+	.works {
+		display: none;
+	}
+}
