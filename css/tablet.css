@@ -201,6 +201,25 @@
 	.footer-form-button {
 		margin: 0;
 	}
+
+	.footer-form-button:hover,
+	.footer-form-button:focus {
+		background-color: #404bbf;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
+
+	.button-main:hover,
+	.button-main:focus {
+		background-color: #404bbf;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
+
+	.address-link:hover,
+	.address-link:focus {
+		color: #404bbf;
+	}
 }
 
 @media screen and (max-width: 767px) {
