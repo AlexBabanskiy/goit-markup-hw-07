@@ -210,6 +210,7 @@ img {
 
 .mobile-menu-nav-item {
 	padding-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .mobile-menu-nav-item:nth-last-child(1) {
